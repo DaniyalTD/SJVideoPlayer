@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SJProgressSlider ()
 @property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
-@property (nonatomic, strong, readonly) UIView *containerView;
+//@property (nonatomic, strong, readonly) UIView *containerView;
 
 /// buffer
 @property (nonatomic, strong) UIView *bufferProgressView;

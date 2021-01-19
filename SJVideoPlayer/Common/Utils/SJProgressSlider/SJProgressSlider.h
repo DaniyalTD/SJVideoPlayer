@@ -39,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  拇指
  */
 @property (nonatomic, strong, readonly) UIImageView *thumbImageView;
+@property (nonatomic, strong, readonly) UIView *containerView;
 
 
 - (void)setThumbCornerRadius:(CGFloat)thumbCornerRadius
