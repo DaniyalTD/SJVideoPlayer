@@ -165,10 +165,10 @@ NSNotificationName const SJVideoPlayerConfigurationsDidUpdateNotification = @"SJ
     _smallScreenImage = [SJVideoPlayerResourceLoader imageNamed:@"sj_video_player_shrinkscreen"];
     _fullscreenImage = [SJVideoPlayerResourceLoader imageNamed:@"sj_video_player_fullscreen"];
 
-    _progressTrackColor =  [UIColor whiteColor];
+    _progressTrackColor =  [UIColor grayColor];
     _progressTrackHeight = 3;
-    _progressTraceColor = [UIColor colorWithRed:2 / 256.0 green:141 / 256.0 blue:140 / 256.0 alpha:1];
-    _progressBufferColor = [UIColor colorWithWhite:0 alpha:0.2];
+    _progressTraceColor = [UIColor whiteColor];
+    _progressBufferColor = [UIColor lightGrayColor];
     _progressThumbColor = _progressTraceColor;
     
     _bottomIndicatorTrackColor = _progressTrackColor;
