@@ -288,7 +288,7 @@ NS_ASSUME_NONNULL_BEGIN
     }
     
     CGFloat maxW = self.superview.superview.superview.frame.size.width - 32;
-    CGFloat maxH = self.frame.size.height;
+//    CGFloat maxH = self.frame.size.height;
     
     CGFloat containerW = maxW - _expand * 2;
     CGFloat containerH = _trackHeight;

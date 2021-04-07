@@ -34,6 +34,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^StateChanged)(SJPlaybackTimeControlStatus);
+
 @interface SJBaseVideoPlayer : NSObject
 + (NSString *)version;
 + (instancetype)player;
@@ -42,6 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// 视频画面填充模式
 ///
+@property(nonatomic,strong) StateChanged _Nonnull stateChanged;
 @property (nonatomic) SJVideoGravity videoGravity;
 
 ///

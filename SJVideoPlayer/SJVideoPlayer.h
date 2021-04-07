@@ -34,6 +34,9 @@
 #import "SJVideoPlayerResourceLoader.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef void (^Reload)(void);
+
 @interface SJVideoPlayer : SJBaseVideoPlayer
 
 ///
@@ -46,6 +49,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// 一个具有简单功能的播放器.
 ///
+@property(nonatomic,strong) Reload _Nonnull reloadPlayer;
+
 + (instancetype)lightweightPlayer;
 
 - (instancetype)init;
