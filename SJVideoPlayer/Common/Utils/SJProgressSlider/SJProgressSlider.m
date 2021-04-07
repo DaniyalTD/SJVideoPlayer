@@ -287,13 +287,13 @@ NS_ASSUME_NONNULL_BEGIN
         return;
     }
     
-    CGFloat maxW = self.frame.size.width;
+    CGFloat maxW = self.superview.superview.superview.frame.size.width - 32;
     CGFloat maxH = self.frame.size.height;
     
     CGFloat containerW = maxW - _expand * 2;
     CGFloat containerH = _trackHeight;
     _containerView.bounds = (CGRect){0, 0, containerW, containerH};
-    _containerView.center = (CGPoint){maxW * 0.5, maxH * 0.5};
+    _containerView.center = (CGPoint){(maxW * 0.5) - (self.superview.superview.frame.origin.x) + 16, 0};
     [self _needUpdateTrackLayout];
     if ( self.showsBufferProgress ) [self _needUpdateBufferViewLayout];
     if ( self.showsStopNode ) [self _needUpdateStopNodeViewLayout];
