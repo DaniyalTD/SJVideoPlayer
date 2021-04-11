@@ -1113,8 +1113,8 @@
             if ( sources.progressThumbImage ) {
                 slider.thumbImageView.image = sources.progressThumbImage;
             }
-            else if ( sources.progressThumbSize ) {
-                [slider setThumbCornerRadius:sources.progressThumbSize * 0.5 size:CGSizeMake(sources.progressThumbSize, sources.progressThumbSize) thumbBackgroundColor:sources.progressThumbColor];
+            else if ( YES ) {
+                [slider setThumbCornerRadius:4.5 * 0.5 size:CGSizeMake(4.5, 4.5) thumbBackgroundColor:[UIColor whiteColor]];
             }
         }
     }
