@@ -352,7 +352,7 @@ NS_ASSUME_NONNULL_BEGIN
     CGFloat tracePosition = _traceImageView.frame.size.width + _expand;
     if ( tracePosition <= minCenterX ) tracePosition = minCenterX;
     else if ( tracePosition >= maxCenterX ) tracePosition = maxCenterX;
-    //TODO
+    
     if ( isnan(tracePosition) || isinf(tracePosition) ) {
         tracePosition = 0;
     }
