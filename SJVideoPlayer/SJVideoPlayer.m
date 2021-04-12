@@ -219,7 +219,9 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 - (void)reloadItemWasTappedForControlLayer:(id<SJControlLayer>)controlLayer {
     [self refresh];
-    self.reloadPlayer();
+    if (self.reloadPlayer != NULL) {
+        self.reloadPlayer();
+    }
     [self.switcher switchControlLayerForIdentifier:SJControlLayer_Edge];
 }
 
