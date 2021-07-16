@@ -177,9 +177,9 @@ NSNotificationName const SJVideoPlayerConfigurationsDidUpdateNotification = @"SJ
 
     _clipsImage = [SJVideoPlayerResourceLoader imageNamed:@"sj_video_player_clips"];
 
-    _replayTitleColor = [UIColor whiteColor];
-    _replayTitleFont = [UIFont boldSystemFontOfSize:12];
-    _replayImage = [SJVideoPlayerResourceLoader imageNamed:@"sj_video_player_replay"];
+  //  _replayTitleColor = [UIColor whiteColor];
+   // _replayTitleFont = [UIFont boldSystemFontOfSize:12];
+   // _replayImage = [SJVideoPlayerResourceLoader imageNamed:@"sj_video_player_replay"];
 }
 
 - (void)_loadSJMoreSettingControlLayerResources {
